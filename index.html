@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AF Sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">AF Sketch</h1>
+    </header>
+    <main>
+      <div class="buttons__container">
+        <div class="buttons__changeColor">
+          <input
+            type="color"
+            id="colorSketch"
+            class="color__input"
+            value="#333333"
+          />
+          <input
+            type="color"
+            id="colorBG"
+            class="color__input"
+            value="#FFFFFF"
+          />
+        </div>
+
+        <button class="button active" id="normalBtn" onclick="this.blur()">
+          Color Mode
+        </button>
+        <button class="button" id="rainbowBtn" onclick="this.blur()">
+          Rainbow Mode
+        </button>
+        <button class="button" id="eraserBtn" onclick="this.blur()">
+          Eraser
+        </button>
+        <button class="button" id="clearBtn" onclick="this.blur()">
+          Clear
+        </button>
+        <!-- <button class="button" id="changeGridBtn">Change Grid</button> -->
+        <div class="range__container">
+          <label for="gridRange" class="label" id="rangeLabel">16 x 16</label>
+          <input
+            type="range"
+            min="1"
+            max="64"
+            value="16"
+            class="slider"
+            id="gridRange"
+          />
+        </div>
+      </div>
+      <div class="grid__container" id="gridContainer">
+        <!-- <div class="grid--square"></div> -->
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &copy; Ahnaf Farhan
+        <a href="https://github.com/ahnaff95" target="_blank"
+          ><ion-icon name="logo-github" id="gitLink"></ion-icon
+        ></a>
+      </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
